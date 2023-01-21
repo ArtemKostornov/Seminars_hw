@@ -1,4 +1,3 @@
-
 Console.WriteLine("Введите число 1: ");
 int number1 = Int32.Parse(Console.ReadLine());
 
@@ -27,4 +26,4 @@ else
     Console.WriteLine($" max= {number3}");
    }
 }
-
+// Напишите программу, которая принимает на вход три числа и выдаёт максимальное из этих чисел.

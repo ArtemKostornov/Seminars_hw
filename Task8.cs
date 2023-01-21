@@ -1,18 +1,18 @@
 Console.WriteLine("Введите число : ");
 int number = Int32.Parse(Console.ReadLine());
 
-int count = number;
+int count = 1;
 
-while (count > 1)
+while (count < number)
 {
     if (count % 2 == 0)
     {
         Console.Write(count + ", ");
-        count = count - 1;
+        count = count + 2;
     }
     else
     {
-        count = count - 1;
+        count = count + 1;
     }
 }
 Console.Write("\b\b  ");
