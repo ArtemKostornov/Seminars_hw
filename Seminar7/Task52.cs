@@ -39,10 +39,10 @@ PrintArray(array);
 
 void ColumnSredn(int [,] arr)
 {
-    int sum1 = 0;
-    int sum2 = 0;
-    int sum3 = 0;
-    int sum4 = 0;
+    double sum1 = 0.0;
+    double sum2 = 0.0;
+    double sum3 = 0.0;
+    double sum4 = 0.0;
     for (int i = 0; i < arr.GetLength(0); i++)
     {
         for (int j = 0; j < arr.GetLength(1); j++)
@@ -65,10 +65,10 @@ void ColumnSredn(int [,] arr)
            }
         }
      }
-     int sredn1 = sum1 / arr.GetLength(0);
-     int sredn2 = sum2 / arr.GetLength(0);
-     int sredn3 = sum3 / arr.GetLength(0);
-     int sredn4 = sum4 / arr.GetLength(0);
+     double sredn1 = Math.Round(sum1 / arr.GetLength(0),2);
+     double sredn2 = Math.Round(sum2 / arr.GetLength(0),2);
+     double sredn3 = Math.Round(sum3 / arr.GetLength(0),2);
+     double sredn4 = Math.Round(sum4 / arr.GetLength(0),2);
      Console.Write($"Среднее арифметическое каждого столбца:{sredn1};{sredn2};{sredn3};{sredn4}.");
 }
 
