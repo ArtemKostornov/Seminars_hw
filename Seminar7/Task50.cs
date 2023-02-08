@@ -36,7 +36,7 @@ int[,] FillArray(int[,] arr, int numI, int numJ)
     }
     if(count == 16)
     {
-        Console.WriteLine("такого элемента в массиве нет");
+        Console.WriteLine($"{numI} {numJ} -> Такого элемента в массиве нет.");
 
     }
     return arr;
