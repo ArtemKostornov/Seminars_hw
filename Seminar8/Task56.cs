@@ -48,13 +48,13 @@ int SumArr(int[,] arr, int count, int summ)
         {
             for (int j = 0; j < arr.GetLength(1); j++)
             {
-                summ = arr[i,j] + summ;
-                if(j == arr.GetLength(1) - 1)
+                summ = arr[i, j] + summ;
+                if (j == arr.GetLength(1) - 1)
                 {
                     i++;
                 }
             }
-            
+
         }
     }
     return summ;
@@ -64,15 +64,28 @@ if (summ1 < summ2 && summ1 < summ3 && summ1 < summ4)
 {
     Console.WriteLine("номер строки с наименьшей суммой элементов: 1 строка");
 }
-if (summ2 < summ1 && summ2 < summ3 && summ2 < summ4)
+else
 {
-    Console.WriteLine("номер строки с наименьшей суммой элементов: 2 строка");
-}
-if (summ3 < summ2 && summ3 < summ1 && summ3 < summ4)
-{
-    Console.WriteLine("номер строки с наименьшей суммой элементов: 3 строка");
-}
-if (summ4 < summ2 && summ4 < summ3 && summ4 < summ1)
-{
-    Console.WriteLine("номер строки с наименьшей суммой элементов: 4 строка");
+    if (summ2 < summ1 && summ2 < summ3 && summ2 < summ4)
+    {
+        Console.WriteLine("номер строки с наименьшей суммой элементов: 2 строка");
+    }
+    else
+    {
+        if (summ3 < summ2 && summ3 < summ1 && summ3 < summ4)
+        {
+            Console.WriteLine("номер строки с наименьшей суммой элементов: 3 строка");
+        }
+        else
+        {
+            if (summ4 < summ2 && summ4 < summ3 && summ4 < summ1)
+            {
+                Console.WriteLine("номер строки с наименьшей суммой элементов: 4 строка");
+            }
+            else
+            {
+                Console.WriteLine("номер строки с наименьшей суммой элементов не найден, существует несколько строк с наименьшей суммой");
+            }
+        }
+    }
 }
